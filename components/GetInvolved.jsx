@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 const GetInvolved = () => {
   return (
     <article className="max-w-7xl mx-auto py-16 px-4 sm:py-12 sm:px-6 lg:px-8 prose lg:prose-lg prose-teal bg-slate-100 text-slate-600">
@@ -8,8 +9,8 @@ const GetInvolved = () => {
       </p>
       <p>
         There are lots of ways you can get involved in our charity work, and if
-        you're already trying to pick between different charities for your
-        company's next partnership, look no further - we can offer lots of
+        you&apos;re already trying to pick between different charities for your
+        company&apos;s next partnership, look no further - we can offer lots of
         rewarding activities for you and your colleagues.
       </p>
 
@@ -22,7 +23,7 @@ const GetInvolved = () => {
         <div className="m-0 p-0 col-start-1">
           <h2 className="text-teal-600">Volunteer</h2>
           <p>
-            Volunteers are an integral part of Graih's work. The drop-in is
+            Volunteers are an integral part of Graih&apos;s work. The drop-in is
             undoubtedly the place where most volunteers are needed. Volunteers
             get to spend time with our guests - from providing a warm welcome to
             helping serve the teas / coffees and lunch. Due to the unpredictable
@@ -47,7 +48,7 @@ const GetInvolved = () => {
 
       <h2 className="text-teal-600">Fundraise</h2>
       <p>
-        Graih couldn't deliver the levels of service that it does without the
+        Graih couldn&apos;t deliver the levels of service that it does without the
         generosity of the community. If you would like to get involved with
         fundraising for Graih, we have a range of ways for you to do so.
         <ul>

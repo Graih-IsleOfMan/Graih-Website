@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 const OpeningTimes = () => {
   return (
     <div className="bg-slate-100 pt-16 lg:py-24">
@@ -33,49 +34,49 @@ const OpeningTimes = () => {
                 <h2 className="text-xl font-semibold">Opening hours</h2>
                 <div className="flex flex-col justify-around">
                   <div>
-                    <h3 class="mt-3 font-headingFont text-2xl lg:text-3xl font-semibold text-graih1-600">
+                    <h3 className="mt-3 font-headingFont text-2xl lg:text-3xl font-semibold text-graih1-600">
                       Drop-in
                     </h3>
-                    <ul class="flex flex-col content-between">
-                      <li class="mt-4 bg-graih3-600 rounded-lg shadow py-2 bg-teal-600">
-                        <div class="text-center uppercase tracking-wide text-lg lg:text-xl text-white">
+                    <ul className="flex flex-col content-between">
+                      <li className="mt-4 bg-graih3-600 rounded-lg shadow py-2 bg-teal-600">
+                        <div className="text-center uppercase tracking-wide text-lg lg:text-xl text-white">
                           Monday to Friday
                         </div>
-                        <div class="text-white text-center text-2xl lg:text-3xl font-semibold">
+                        <div className="text-white text-center text-2xl lg:text-3xl font-semibold">
                           10 am to 2 pm
                         </div>
                       </li>
-                      <li class="mt-4 bg-graih3-600 rounded-lg shadow py-2 bg-teal-600">
-                        <div class="text-center uppercase tracking-wide text-lg lg:text-xl text-white">
+                      <li className="mt-4 bg-graih3-600 rounded-lg shadow py-2 bg-teal-600">
+                        <div className="text-center uppercase tracking-wide text-lg lg:text-xl text-white">
                           Sunday
                         </div>
-                        <div class="text-white text-center text-2xl lg:text-3xl font-semibold">
+                        <div className="text-white text-center text-2xl lg:text-3xl font-semibold">
                           12.30 pm to 2 pm
                         </div>
                       </li>
-                      <li class="mt-4 bg-graih3-600 rounded-lg shadow py-2 bg-teal-600">
-                        <div class="text-center uppercase tracking-wide text-lg lg:text-xl text-white">
+                      <li className="mt-4 bg-graih3-600 rounded-lg shadow py-2 bg-teal-600">
+                        <div className="text-center uppercase tracking-wide text-lg lg:text-xl text-white">
                           Every evening
                         </div>
-                        <div class="text-white text-center text-2xl lg:text-3xl font-semibold">
+                        <div className="text-white text-center text-2xl lg:text-3xl font-semibold">
                           9 pm to 10 pm
                         </div>
                       </li>
                     </ul>
                   </div>
                   <div>
-                    <h3 class="mt-8 font-headingFont text-2xl lg:text-3xl font-semibold text-graih1-600">
+                    <h3 className="mt-8 font-headingFont text-2xl lg:text-3xl font-semibold text-graih1-600">
                       Emergency night shelter
                     </h3>
-                    <p class="mt-2 text-lg">
+                    <p className="mt-2 text-lg">
                       For those without overnight accomodation, the emergency
                       night shelter is available for over 18s.
                     </p>
-                    <div class="mt-4 bg-graih3-600 rounded-lg shadow py-2 bg-teal-600">
-                      <div class="text-center uppercase tracking-wide text-lg lg:text-xl text-white">
+                    <div className="mt-4 bg-graih3-600 rounded-lg shadow py-2 bg-teal-600">
+                      <div className="text-center uppercase tracking-wide text-lg lg:text-xl text-white">
                         OPEN every night
                       </div>
-                      <div class="text-white text-center text-2xl lg:text-3xl font-semibold">
+                      <div className="text-white text-center text-2xl lg:text-3xl font-semibold">
                         9 pm to 7:30 am
                       </div>
                     </div>
