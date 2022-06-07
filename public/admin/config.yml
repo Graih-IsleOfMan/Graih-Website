@@ -1,0 +1,43 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: public/img
+public_folder: /img
+site_url: http://localhost:3000
+logo_url: http://localhost:3000
+locale: en
+collections:
+  - name: pages
+    label: Pages
+    files:
+      - label: Home
+        name: home
+        file: content/home.md
+        fields:
+          - { label: Intro paragraph, name: introParagraph, widget: markdown }
+          - label: Opening Hours
+            name: openingHours
+            widget: list
+            fields:
+              - { label: Service area, name: serviceArea, widget: string }
+              - { label: Description, name: description, widget: string }
+              - label: Schedules
+                name: schedules
+                widget: list
+                fields:
+                  - { label: Days, name: days, widget: string }
+                  - { label: Opening times, name: openingTimes, widget: string }
+          - { label: Our impact date range: name: ourImpactDates, widget: string }
+          - label: Our impact stats
+            name: ourImpactStats
+            widget: list
+            fields:
+              - { label: Statistic value, name: statValue, widget: string }
+              - { label: Statistic description, name: statDescription, widget: string }
+          - label: Trustees
+            name: trustees
+            widget: list
+            min: 3
+            max: 4
+            fields: 
+              - { label: Name, name: name, widget: string }
