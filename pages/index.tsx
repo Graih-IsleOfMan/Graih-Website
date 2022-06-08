@@ -1,14 +1,21 @@
-import type { NextPage } from "next";
+import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import Hero from '../components/Hero';
 import Introduction from '../components/Introduction';
 import OpeningTimes from '../components/OpeningTimes';
 import Statistics from '../components/Statistics';
 import Footer from "../components/Footer";
+import homeContent from "../_content/home.yml";
+import { markdownToHtml } from "../utils/markdown";
 
-const Home: NextPage = () => {
+type Props = {
+  intro: string;
+}
+
+const Home = ({intro}:Props) => {
   return (
     <>
+    {/* <h1 dangerouslySetInnerHTML={{__html:intro}}/> */}
     <Head>
       <title>Graih - Get Involved</title>
     </Head>
@@ -20,6 +27,11 @@ const Home: NextPage = () => {
     <Footer></Footer>
   </div></>
   );
+};
+
+export const getStaticProps: GetStaticProps = async () => {
+	const intro = await markdownToHtml(homeContent.introParagraph);
+	return {props: {intro}};
 };
 
 export default Home;

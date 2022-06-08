@@ -1,0 +1,39 @@
+---
+introParagraph: >-
+  We are a charity based in Douglas in the Isle of man, but we work all over the
+  island. We are here to help people who are in insecure accomodation and those
+  affected by homelessness. Graih offers a range of services including a
+  **Drop-In centre**, **Community Support** and an **Emergency Night Shelter**.
+
+
+  Graih adopts a non-judgemental approach to addressing homelessness issues. We support individuals ????.
+openingHours:
+  - serviceArea: Drop-in
+    schedules:
+      - days: Monday to Friday
+        openingTimes: 10 am to 2 pm
+      - days: Sunday
+        openingTimes: 12.30 pm to 2 pm
+      - days: Every evening
+        openingTimes: 9 pm to 10 pm
+    description: " "
+  - serviceArea: Emergency night shelter
+    description: For those without overnight accomodation, the emergency night
+      shelter is available for over 18s.
+    schedules:
+      - days: Open every night
+        openingTimes: 9 pm to 7:30 am
+ourImpactDates: Statistics are taken over the time period 1st January 2019 to
+  31st December 2021.
+ourImpactStats:
+  - statValue: 14,192
+    statDescription: Meals served
+  - statValue: "836"
+    statDescription: Individuals supported
+  - statValue: 1,385
+    statDescription: Bed spaces provided
+trustees:
+  - name: J Bingham
+  - name: E Irwin
+  - name: T Bateman
+  - name: D French

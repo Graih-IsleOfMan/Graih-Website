@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: main
+local_backend: true
 media_folder: public/img
 public_folder: /img
 site_url: http://localhost:3000
@@ -9,10 +10,11 @@ locale: en
 collections:
   - name: pages
     label: Pages
+    format: yaml
     files:
       - label: Home
         name: home
-        file: content/home.md
+        file: _content/home.yml
         fields:
           - { label: Intro paragraph, name: introParagraph, widget: markdown }
           - label: Opening Hours
@@ -20,7 +22,7 @@ collections:
             widget: list
             fields:
               - { label: Service area, name: serviceArea, widget: string }
-              - { label: Description, name: description, widget: string }
+              - { label: Description, name: description, widget: string, required: false }
               - label: Schedules
                 name: schedules
                 widget: list
@@ -43,7 +45,8 @@ collections:
               - { label: Name, name: name, widget: string }
   - name: content
     label: Content
-    folder: _content
+    folder: _content/pages
+    format: yaml
     create: true
     fields:
       - { label: Title, name: title, widget: string }
@@ -56,8 +59,9 @@ collections:
           - label: "Featured Image"
             name: "featuredImage"
             widget: "image"
+            required: false
             choose_url: false
-          - { label: Image alt text, name: imageAlt, widget: string }
+          - { label: Image alt text, name: imageAlt, widget: string, required: false }
           - { label: Image on left, name: imageLeft, widget: boolean, default: true }
       - { label: Include in menu, name: includeMenu, widget: boolean, default: true }
       - { label: Include in footer, name: includeFooter, widget: boolean, default: false }
