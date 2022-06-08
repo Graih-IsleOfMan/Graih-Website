@@ -41,3 +41,23 @@ collections:
             max: 4
             fields: 
               - { label: Name, name: name, widget: string }
+  - name: content
+    label: Content
+    folder: _content
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - label: Paragraphs
+        name: paragraphs
+        widget: list
+        fields:
+          - { label: Content, name: content, widget: markdown }
+          - { label: Include image, name: includeImage, widget: boolean, default: false }
+          - label: "Featured Image"
+            name: "featuredImage"
+            widget: "image"
+            choose_url: false
+          - { label: Image alt text, name: imageAlt, widget: string }
+          - { label: Image on left, name: imageLeft, widget: boolean, default: true }
+      - { label: Include in menu, name: includeMenu, widget: boolean, default: true }
+      - { label: Include in footer, name: includeFooter, widget: boolean, default: false }
