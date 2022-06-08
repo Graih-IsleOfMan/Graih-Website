@@ -27,7 +27,7 @@ collections:
                 fields:
                   - { label: Days, name: days, widget: string }
                   - { label: Opening times, name: openingTimes, widget: string }
-          - { label: Our impact date range: name: ourImpactDates, widget: string }
+          - { label: Our impact date range, name: ourImpactDates, widget: string }
           - label: Our impact stats
             name: ourImpactStats
             widget: list
