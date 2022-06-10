@@ -10,11 +10,11 @@ locale: en
 collections:
   - name: pages
     label: Pages
-    format: yaml
+    format: json
     files:
       - label: Home
         name: home
-        file: _content/home.yml
+        file: _content/home.json
         fields:
           - { label: Intro paragraph, name: introParagraph, widget: markdown }
           - label: Opening Hours
@@ -33,20 +33,21 @@ collections:
           - label: Our impact stats
             name: ourImpactStats
             widget: list
+            allow_add: true
+            min: 3
+            max: 3
             fields:
               - { label: Statistic value, name: statValue, widget: string }
               - { label: Statistic description, name: statDescription, widget: string }
           - label: Trustees
             name: trustees
             widget: list
-            min: 3
-            max: 4
             fields: 
               - { label: Name, name: name, widget: string }
   - name: content
     label: Content
     folder: _content/pages
-    format: yaml
+    format: json
     create: true
     fields:
       - { label: Title, name: title, widget: string }
@@ -54,6 +55,7 @@ collections:
         name: paragraphs
         widget: list
         fields:
+          - { label: Heading, name: heading, widget: string, required: false }
           - { label: Content, name: content, widget: markdown }
           - { label: Include image, name: includeImage, widget: boolean, default: false }
           - label: "Featured Image"

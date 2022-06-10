@@ -67,7 +67,7 @@ const Footer = () => {
           ))}
         </div>
         <p className="mt-8 text-center text-base text-slate-300">
-          &copy; 2021 Graih. All rights reserved.
+          &copy; {new Date().getFullYear()} Graih. All rights reserved.
           <br />
           Graih is a Manx-registered charity No. 1012 Company No. 121509C
           <br />
