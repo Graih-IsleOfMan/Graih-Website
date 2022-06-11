@@ -30,7 +30,7 @@ const Home = ({ intro, openingHours, impactStats, impactDates, menu, footerMenu,
   return (
     <>
       <Head>
-        <title>Graih - A home for the homelessin the Isle of Man</title>
+        <title>Graih - A home for the homeless in the Isle of Man</title>
       </Head>
       <div className="App bg-slate-100 relative">
         <Hero menu={menu} actions= {{primaryActionLabel,
