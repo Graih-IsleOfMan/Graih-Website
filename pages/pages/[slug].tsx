@@ -2,25 +2,26 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import { fetchPages } from "../../utils/pages";
+import { fetchPages, getFooterMenu, getHeaderMenu } from "../../utils/pages";
+import homeContent from "../../_content/home.json";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-const Page = ({ page }: any) => {
+const Page = ({ page, menu, footerMenu, trustees }: any) => {
   return (
     <>
       <Head>
         <title>Graih - {page.title}</title>
       </Head>
       <div className="App bg-slate-100 relative">
-        <Header></Header>
+        <Header menu={menu}></Header>
         <article className="max-w-7xl mx-auto py-16 px-4 sm:py-12 sm:px-6 lg:px-8 prose lg:prose-lg prose-teal bg-slate-100 text-slate-600">
           <h1 className="text-teal-600">{page.title}</h1>
-          {page.paragraphs.map((p: any) => {
+          {page.paragraphs.map((p: any, index: number) => {
             return (
-              <div className="m-0 p-0 lg:grid lg:grid-cols-2 lg:gap-8">
+              <div className="m-0 p-0 lg:grid lg:grid-cols-2 lg:gap-8" key={`p-${index}`}>
                 {p.includeImage ? (
                   <img
                     className={classNames(
@@ -46,7 +47,7 @@ const Page = ({ page }: any) => {
             );
           })}
         </article>
-        <Footer></Footer>
+        <Footer footerMenu={footerMenu} trustees={trustees}></Footer>
       </div>
     </>
   );
@@ -57,8 +58,11 @@ export default Page;
 export const getStaticProps: GetStaticProps = async (context) => {
   const fetchedPages = await fetchPages();
   const page = fetchedPages.find((page) => page.slug === context?.params?.slug);
+  const menu = getHeaderMenu(fetchedPages);
+  const footerMenu = getFooterMenu(fetchedPages);
+  const { trustees } = homeContent;
 
-  return { props: { page: await page } };
+  return { props: { page: await page, menu, footerMenu, trustees } };
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {

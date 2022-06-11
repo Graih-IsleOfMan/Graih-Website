@@ -6,7 +6,7 @@ import Statistics, { Statistic } from "../components/Statistics";
 import Footer from "../components/Footer";
 import homeContent from "../_content/home.json";
 import { markdownToHtml } from "../utils/markdown";
-import { Menu } from "@headlessui/react";
+import { fetchPages, getFooterMenu, getHeaderMenu } from "../utils/pages";
 
 type Props = {
   intro: string;
@@ -14,16 +14,29 @@ type Props = {
   impactStats: Statistic[];
   impactDates: string;
   homeContent: any;
+  menu: { label: string, href: string }[];
+  footerMenu: { label: string, href: string }[];
+  trustees: { name: string }[];
+  primaryActionLabel: string;
+  primaryActionLink: string;
+  secondaryActionLabel: string;
+  secondaryActionLink: string;
 };
 
-const Home = ({ intro, openingHours, impactStats, impactDates }: Props) => {
+const Home = ({ intro, openingHours, impactStats, impactDates, menu, footerMenu, trustees, primaryActionLabel,
+  primaryActionLink,
+  secondaryActionLabel,
+  secondaryActionLink }: Props) => {
   return (
     <>
       <Head>
         <title>Graih - A home for the homelessin the Isle of Man</title>
       </Head>
       <div className="App bg-slate-100 relative">
-        <Hero></Hero>
+        <Hero menu={menu} actions= {{primaryActionLabel,
+  primaryActionLink,
+  secondaryActionLabel,
+  secondaryActionLink}}></Hero>
         <div className="bg-slate-100">
           <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:pt-16 pb-8">
             <h2 className="text-4xl font-extrabold text-black">
@@ -40,21 +53,30 @@ const Home = ({ intro, openingHours, impactStats, impactDates }: Props) => {
         </div>
         <OpeningTimes openingHours={openingHours}></OpeningTimes>
         <Statistics
-          impactDates={homeContent.ourImpactDates}
+          impactDates={impactDates}
           impactStats={impactStats}
         ></Statistics>
       </div>
-      <Footer></Footer>
+      <Footer footerMenu={footerMenu} trustees={trustees}></Footer>
     </>
   );
 };
 
 export const getStaticProps: GetStaticProps = async () => {
+  const fetchedPages = await fetchPages();
+  const menu = getHeaderMenu(fetchedPages);
+  const footerMenu = getFooterMenu(fetchedPages);
+
   const {
+    primaryActionLabel,
+    primaryActionLink,
+    secondaryActionLabel,
+    secondaryActionLink,
     openingHours,
     introParagraph,
     ourImpactStats: impactStats,
     ourImpactDates: impactDates,
+    trustees
   } = homeContent;
   return {
     props: {
@@ -62,6 +84,13 @@ export const getStaticProps: GetStaticProps = async () => {
       openingHours,
       impactStats,
       impactDates,
+      menu,
+      footerMenu,
+      trustees,
+      primaryActionLabel,
+      primaryActionLink,
+      secondaryActionLabel,
+      secondaryActionLink,
     },
   };
 };

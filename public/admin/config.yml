@@ -16,6 +16,10 @@ collections:
         name: home
         file: _content/home.json
         fields:
+          - { label: Primary action label, name: primaryActionLabel, widget: string }
+          - { label: Primary action link, name: primaryActionLink, widget: string }
+          - { label: Secondary action label, name: secondaryActionLabel, widget: string }
+          - { label: Secondary action link, name: secondaryActionLink, widget: string }
           - { label: Intro paragraph, name: introParagraph, widget: markdown }
           - label: Opening Hours
             name: openingHours
@@ -44,6 +48,11 @@ collections:
             widget: list
             fields: 
               - { label: Name, name: name, widget: string }
+      - label: Contact
+        name: contact
+        file: _content/contact.json
+        fields:
+          - { label: Title, name: title, widget: string }
   - name: content
     label: Content
     folder: _content/pages
@@ -51,6 +60,7 @@ collections:
     create: true
     fields:
       - { label: Title, name: title, widget: string }
+      - { label: Shortened menu wording, title: menuWording, widget: string, required: false}
       - label: Paragraphs
         name: paragraphs
         widget: list

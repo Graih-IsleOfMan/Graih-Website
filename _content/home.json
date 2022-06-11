@@ -1,5 +1,9 @@
 {
   "introParagraph": "We are a charity based in Douglas in the Isle of man, but we work all over the island. We are here to help people who are in insecure accomodation and those affected by homelessness. Graih offers a range of services including a **Drop-In centre**, **Community Support** and an **Emergency Night Shelter**.\n\nGraih adopts a non-judgemental approach to addressing homelessness issues. We support individuals ????.",
+  "primaryActionLabel": "Need help?",
+  "primaryActionLink": "#",
+  "secondaryActionLabel": "Get involved",
+  "secondaryActionLink": "/pages/get-involved",
   "ourImpactStats": [
     {
       "statValue": "14,192",
