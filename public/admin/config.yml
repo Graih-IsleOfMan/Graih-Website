@@ -1,11 +1,10 @@
 backend:
   name: git-gateway
   branch: main
-local_backend: true
 media_folder: public/img
 public_folder: /img
-site_url: http://localhost:3000
-logo_url: http://localhost:3000
+site_url: https://sleepy-knuth-43c8bb.netlify.app/
+logo_url: https://sleepy-knuth-43c8bb.netlify.app/logo2.svg
 locale: en
 collections:
   - name: pages
@@ -60,7 +59,7 @@ collections:
     create: true
     fields:
       - { label: Title, name: title, widget: string }
-      - { label: Shortened menu wording, title: menuWording, widget: string, required: false}
+      - { label: Shortened menu wording, name: menuWording, widget: string, required: false}
       - label: Paragraphs
         name: paragraphs
         widget: list
