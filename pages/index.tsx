@@ -4,7 +4,7 @@ import Hero from "../components/Hero";
 import OpeningTimes, { ServiceArea } from "../components/OpeningTimes";
 import Statistics, { Statistic } from "../components/Statistics";
 import Footer from "../components/Footer";
-import homeContent from "../_content/home.yml";
+import homeContent from "../_content/home.json";
 import { markdownToHtml } from "../utils/markdown";
 import { Menu } from "@headlessui/react";
 
@@ -19,7 +19,6 @@ type Props = {
 const Home = ({ intro, openingHours, impactStats, impactDates }: Props) => {
   return (
     <>
-      {/* <h1 dangerouslySetInnerHTML={{__html:intro}}/> */}
       <Head>
         <title>Graih - A home for the homelessin the Isle of Man</title>
       </Head>
@@ -59,7 +58,7 @@ export const getStaticProps: GetStaticProps = async () => {
   } = homeContent;
   return {
     props: {
-      intro: markdownToHtml(introParagraph),
+      intro: await markdownToHtml(introParagraph),
       openingHours,
       impactStats,
       impactDates,
