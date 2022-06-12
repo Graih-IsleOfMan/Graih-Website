@@ -2,5 +2,6 @@
   "paragraphs": [],
   "includeMenu": true,
   "includeFooter": false,
-  "title": "Services"
+  "title": "Services",
+  "sortOrder": 3
 }
