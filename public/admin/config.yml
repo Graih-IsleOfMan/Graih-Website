@@ -57,7 +57,9 @@ collections:
     folder: _content/pages
     format: json
     create: true
+    sortable_fields: ['sortOrder']
     fields:
+      - { label: Sort Order, name: sortOrder, widget: number }
       - { label: Title, name: title, widget: string }
       - { label: Shortened menu wording, name: menuWording, widget: string, required: false}
       - label: Paragraphs
