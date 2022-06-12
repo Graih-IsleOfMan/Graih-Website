@@ -31,8 +31,9 @@ export const fetchPages = async (): Promise<any[]> => {
 
 const getMenu = (predicate: ((page: any) => boolean)) => (pages: any) => pages.filter(predicate).map((page: any) => ({
     label: page.menuWording ? page.menuWording : page.title,
-    href: `/pages/${page.slug}`
-}))
+    href: `/pages/${page.slug}`,
+    sortOrder: page.sortOrder
+})).sort((a: any,b: any) =>  a.sortOrder - b.sortOrder)
 
 export const getHeaderMenu = (pages: any) =>  [...getMenu(page => page.includeMenu)(pages), {
     label: 'Contact',
