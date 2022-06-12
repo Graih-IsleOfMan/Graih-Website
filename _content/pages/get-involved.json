@@ -28,5 +28,6 @@
   ],
   "includeMenu": true,
   "includeFooter": false,
-  "title": "Get Involved"
+  "title": "Get Involved",
+  "sortOrder": 2
 }
