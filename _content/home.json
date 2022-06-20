@@ -20,7 +20,7 @@
   "ourImpactDates": "Statistics are taken over the time period 1st January 2019 to 31st December 2021.",
   "openingHours": [
     {
-      "serviceArea": "Drop-in",
+      "serviceArea": "Drop-In",
       "schedules": [
         {
           "days": "Monday to Friday",
@@ -37,8 +37,8 @@
       ]
     },
     {
-      "serviceArea": "Emergency night shelter",
-      "description": "For those without overnight accomodation, the emergency night shelter is available for over 18s.",
+      "serviceArea": "Emergency Night Shelter",
+      "description": "For those without overnight accomodation, the Emergency Night Shelter is available for over 18s. There's no need to book you can just turn up.",
       "schedules": [
         {
           "days": "OPEN every night",
