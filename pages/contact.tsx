@@ -118,8 +118,8 @@ const Contact = ({ menu, footerMenu, trustees, title }: any) => {
                   </h3>
                   <form
                     name="contact"
-                    netlify
-                    netlify-honeypot="bot-field"
+                    data-netlify="true"
+                    data-netlify-honeypot="bot-field"
                     method="POST"
                     className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
                   >
