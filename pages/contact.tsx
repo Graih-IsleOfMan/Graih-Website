@@ -14,9 +14,10 @@ const Contact = ({ menu, footerMenu, trustees, title }: any) => {
       </Head>
       <div className="App bg-white relative">
         <Header menu={menu}></Header>
-        <div className="bg-white pt-16 lg:py-24">
-          <div className="lg:mx-auto lg:max-w-7xl lg:px-8">
-            <h1 className="text-6xl font-extrabold text-teal-600">
+        <div className="bg-white py-16 px-0 sm:py-12">
+          <div className="lg:mx-auto lg:max-w-7xl px-6
+          ">
+            <h1 className="text-5xl font-extrabold text-teal-600">
               Contact us
             </h1>
           </div>
