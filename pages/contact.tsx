@@ -87,7 +87,7 @@ const Contact = ({ menu, footerMenu, trustees, title }: any) => {
                     </p>
                   </div>
                   <p className="mt-6">
-                    <strong>Note:</strong> Please buzz 'Drop-in' for entry.
+                    <strong>Note:</strong> Please buzz &apos;Drop-in&apos; for entry.
                   </p>
                 </div>
                 <div className="flex flex-col justify-around"></div>
