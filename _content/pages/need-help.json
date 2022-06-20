@@ -1,5 +1,11 @@
 {
-  "paragraphs": [],
+  "paragraphs": [
+    {
+      "includeImage": false,
+      "imageLeft": true,
+      "content": "Are you homeless on the Isle of Man?\n\nWe are here to help you!\n\n**Drop-In**\n\nWe provide a free Drop-In for food, hot drinks, clothing, shower facilities and a safe social space. At the Drop-In there are staff and volunteers available to help you and give you advice.  \n\n\\    \n\n**Emergency Night Shelter**\n\nWe also have a free Emergency Night Shelter, You dont need to book in to use this you can just turn up during our opening times. There are two staff members awake during the whole night ensuring the safety of our guests and premises and on hand to chat over a hot cuppa. \n\nWe are gentle and approachable and wont judge your situation - dignity and respect is really important to us! We want you to feel safe and comfortable in Graih."
+    }
+  ],
   "includeMenu": true,
   "includeFooter": false,
   "title": "Need help?",
