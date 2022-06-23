@@ -14,10 +14,11 @@
       "content": "The Night Shelter opened at the start of 2019 and has been open every night since. There are always 2 staff on shift at all times who are awake and ready to welcome any one who may turn up for shelter throughout the night. There's no need to phone ahead, you can just turn up! The staff ensure that all are settled and have all they need for the night and ensure the safety of the premises and our guests at all times.\n\nBoth men and women 18 years and over are welcome. All medication and alcohol will need to be handed in upon arrival but will be returned when leaving. People can access their medication when needed. \n\nIf you are under the age of 18 years of age and in need of accommodation for the night or find yourself in a homeless situation,  please contact the Duty Social Worker Team."
     },
     {
-      "includeImage": false,
-      "imageLeft": true,
+      "includeImage": true,
+      "imageLeft": false,
       "heading": "Support in the Community",
-      "content": "We support people out and about in the community with the purpose of helping to sustain and nurture relationships and helping build a stronger support network for people. This may entail visiting guests in hospital or Prison, this may be visiting them in their accommodation  or offering support in appointments with other agencies."
+      "content": "We support people out and about in the community with the purpose of helping to sustain and nurture relationships and helping build a stronger support network for people. This may entail visiting guests in hospital or Prison, this may be visiting them in their accommodation  or offering support in appointments with other agencies.",
+      "featuredImage": "/img/community-sign-for-website.jpg"
     }
   ],
   "includeMenu": true,
