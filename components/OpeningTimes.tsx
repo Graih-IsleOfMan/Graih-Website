@@ -17,6 +17,10 @@ type Props = {
   openingHours: ServiceArea[];
 };
 
+function classNames(...classes: string[]) {
+  return classes.filter(Boolean).join(" ");
+}
+
 const OpeningTimes = ({ openingHours }: Props) => {
   return (
     <div className="bg-slate-100 pt-16 lg:py-24">
@@ -42,14 +46,16 @@ const OpeningTimes = ({ openingHours }: Props) => {
               <div>
                 <h2 className="text-xl font-semibold">Opening hours</h2>
                 <div className="flex flex-col justify-around">
-                  {openingHours.map((serviceArea) => {
+                  {openingHours.map((serviceArea, index) => {
                     return <div
                       key={`serviceArea-${serviceArea.serviceArea.replace(
                         /\s/g,
                         "-"
                       )}`}
                     >
-                      <h3 className="mt-3 font-headingFont text-2xl lg:text-3xl font-semibold text-graih1-600">
+                      <h3 className={classNames(
+                        index === 0 ? "mt-3" : "mt-10",
+                        "font-headingFont text-2xl lg:text-3xl font-semibold text-graih1-600")}>
                         {serviceArea.serviceArea}
                       </h3>
                       { serviceArea.description && !serviceArea.description.match(/^\s*$/) ? <p className="mt-2 text-lg">

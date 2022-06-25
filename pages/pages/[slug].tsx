@@ -39,7 +39,9 @@ const Page = ({ page, menu, footerMenu, trustees }: any) => {
                   )}
                 >
                   {p.heading ? (
-                    <h2 className="text-teal-600">{p.heading}</h2>
+                    <h2 className={classNames(
+                    index === 0 ? "not-prose mt-0" : "",
+                    "text-teal-600")}>{p.heading}</h2>
                   ) : null}
                   <div dangerouslySetInnerHTML={{ __html: p.content }}></div>
                 </div>

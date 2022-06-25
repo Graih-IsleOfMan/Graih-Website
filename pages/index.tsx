@@ -46,7 +46,7 @@ const Home = ({ intro, openingHours, impactStats, impactDates, menu, footerMenu,
               <em>A Manx word meaning love</em>
             </h3>
             <div
-              className="mt-6 border-t border-gray-800 border-opacity-25 pt-4 text-lg"
+              className="mt-6 border-t border-gray-800 border-opacity-25 pt-4 text-lg prose max-w-none"
               dangerouslySetInnerHTML={{ __html: intro }}
             />
           </div>
