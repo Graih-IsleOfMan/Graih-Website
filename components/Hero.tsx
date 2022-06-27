@@ -3,17 +3,19 @@ import Link from "next/link";
 import Menu from "./Menu";
 
 type Props = {
-  menu: { label: string, href: string }[];
-  actions: {primaryActionLabel: string,
-    primaryActionLink: string,
-    secondaryActionLabel: string,
-    secondaryActionLink: string}
-}
+  menu: { label: string; href: string }[];
+  actions: {
+    primaryActionLabel: string;
+    primaryActionLink: string;
+    secondaryActionLabel: string;
+    secondaryActionLink: string;
+  };
+};
 
 const Hero = ({ menu, actions }: Props) => {
   return (
     <div className="bg-slate-800 bg-cover bg-hero-home bg-blend-soft-light">
-      <Menu menu={menu}/>
+      <Menu menu={menu} />
       <div className="pt-10 m:pt-16 lg:pt-8 lg:pb-14">
         <div className="mx-auto max-w-7xl lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-8">
@@ -31,29 +33,24 @@ const Hero = ({ menu, actions }: Props) => {
                 </p>
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start items-center">
                   <div className="rounded-md shadow">
-                    <span className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-lg rounded-md text-slate-800 font-bold hover:bg-teal-600 md:py-4 md:text-2xl md:px-10 bg-teal-400">
-                    <Link
-                      href={actions.primaryActionLink}
-                    >
-                      {actions.primaryActionLabel}
-                    </Link></span>
+                    <Link href={actions.primaryActionLink}>
+                      <span className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-lg rounded-md text-slate-800 font-bold hover:bg-teal-600 md:py-4 md:text-2xl md:px-10 bg-teal-400">
+                        {actions.primaryActionLabel}
+                      </span>
+                    </Link>
                   </div>
                   <div className="mt-3 sm:mt-0 sm:ml-3">
-                    <span className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-slate-800 bg-slate-100 hover:bg-slate-300 md:py-4 md:text-xl md:px-10">
-                    <Link
-                      href={actions.secondaryActionLink} 
-                    >
-                      {actions.secondaryActionLabel}
-                    </Link></span>
+                    <Link href={actions.secondaryActionLink}>
+                      <span className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-slate-800 bg-slate-100 hover:bg-slate-300 md:py-4 md:text-xl md:px-10">
+                        {actions.secondaryActionLabel}
+                      </span>
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
             <div className="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
               <div className="hidden lg:block mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
-              
-
-                
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 28.57 28.108"

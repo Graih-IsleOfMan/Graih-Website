@@ -56,7 +56,7 @@ const OpeningTimes = ({ openingHours }: Props) => {
                       <h3 className={classNames(
                         index === 0 ? "mt-3" : "mt-10",
                         "font-headingFont text-2xl lg:text-3xl font-semibold text-graih1-600")}>
-                        {serviceArea.serviceArea}
+                        <a id={serviceArea.serviceArea.split(' ').join('-').toLowerCase()}>{serviceArea.serviceArea}</a>
                       </h3>
                       { serviceArea.description && !serviceArea.description.match(/^\s*$/) ? <p className="mt-2 text-lg">
                       {serviceArea.description}

@@ -79,13 +79,13 @@ const Menu = ({ menu }: Props) => {
               </div>
               <div className="hidden md:flex md:items-center md:space-x-6">
                 {menu.map((item) => (
-                  <span key={`menu-${item.href}`} className="text-base font-medium text-white hover:text-slate-300">
-                    <Link
+                  <Link
                       key={`link-${item.href}`}
                       href={item.href}
-                    >
+                    ><span key={`menu-${item.href}`} className="text-base font-medium text-white hover:text-slate-300">
+                    
                       {item.label}
-                    </Link></span>
+                    </span></Link>
                 ))}
               </div>
             </nav>
@@ -158,13 +158,13 @@ const Menu = ({ menu }: Props) => {
                 <div className="pt-5 pb-6">
                   <div className="px-2 space-y-1">
                     {menu.map((item) => (
-                      <span key={`menu2-${item.href}`} className="block px-3 py-2 rounded-md text-base font-medium text-slate-900 hover:bg-teal-200">
-                        <Link
+                      <Link
                           key={item.label}
                           href={item.href}
-                        >
+                        ><span key={`menu2-${item.href}`} className="block px-3 py-2 rounded-md text-base font-medium text-slate-900 hover:bg-teal-200">
+                        
                           {item.label}
-                        </Link></span>
+                        </span></Link>
                     ))}
                   </div>
                 </div>
