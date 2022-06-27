@@ -42,7 +42,7 @@ const Contact = ({
                 </h2>
                 <dl className="sm:divide-y sm:divide-teal-600 mt-5">
                   {contactDetails.map((detail: any) => (
-                    <div className="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                    <div key={detail.name} className="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                       <dt className="font-semibold text-teal-700">
                         {detail.name}
                       </dt>
