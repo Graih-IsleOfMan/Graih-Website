@@ -52,7 +52,17 @@ collections:
         name: contact
         file: _content/contact.json
         fields:
+          - { label: Map, name: map, widget: image }
           - { label: Title, name: title, widget: string }
+          - label: Contact Details
+            name: contactDetails
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Details, name: details , widget: text }
+          - { label: Contact Details Note, name: detailsNote, widget: text }
+          - { label: Address, name: address, widget: text }
+          - { label: Address Note, name: addressNote, widget: text }
   - name: content
     label: Content
     folder: _content/pages

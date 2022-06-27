@@ -1,3 +1,25 @@
 {
-    "title": "Contact us"
+  "title": "Contact us",
+  "contactDetails": [
+    {
+      "name": "Drop-in office mobile",
+      "details": "07624 304381 (during office hours only)"
+    },
+    {
+      "name": "General information and enquiries",
+      "details": "info@graih.org.im"
+    },
+    {
+      "name": "Manager",
+      "details": "Erica Irwin\nerica@graih.org.im\n07624 224807"
+    },
+    {
+      "name": "Volunteer co-ordinator",
+      "details": "Yvette Armstrong\n07624 567967"
+    }
+  ],
+  "detailsNote": "Please note that we are not always on our telephones. We will endeavour to respond to you when we can. In the event of crisis please make your way, or send people to, the drop-in at our next opening time.",
+  "address": "The Alpha Centre\nBroadway\nDouglas\nIsle of Man\nIM2 4EN",
+  "addressNote": "Note: Please buzz 'Drop-in' for entry.",
+  "map": "/img/map.png"
 }
