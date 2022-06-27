@@ -3,7 +3,8 @@
     {
       "includeImage": false,
       "imageLeft": true,
-      "content": "People are at the heart of our work. The quality and extent of our work depends on the generosity of those who support us.\n\nThere are lots of ways you can get involved in our charity work. If you're already trying to pick between different charities for your company's next partnership, look no further - We would love to be supported in this way!"
+      "content": "People are at the heart of our work. The quality and extent of our work depends on the generosity of those who support us.\n\nThere are lots of ways you can get involved in our charity work. If you're already trying to pick between different charities for your company's next partnership, look no further - We would love to be supported in this way!",
+      "heading": ""
     },
     {
       "includeImage": true,
@@ -24,6 +25,12 @@
       "heading": "Financial Donations",
       "content": "By donating, you can make a real and positive difference to our work - and in turn, to the lives of the people that we support.\n\n### Ways you can donate\n\n* **In person**: Come to the Drop-In ([opening hours](/#drop-in)), to donate by cash or cheque (Cheques payable to: Graih).\n* **By post**: our address can be found on the [contact us page](/contact)\n* **Online**: For regular giving, why not fill in a Standing Order Form **(Link to form)**, or for a one off donation a Bank Transfer. Here are the details:\n\n  * **Name:** Graih\n  * **Account number:** 005 095 05\n  * **Sort Code:** 30-12-80\n  * **Bank:** Lloyds Bank, Douglas, Isle of Man, IM99 1AN\n\nThankyou!",
       "featuredImage": "/img/simple-rustic-thank-you-card.webp"
+    },
+    {
+      "includeImage": false,
+      "imageLeft": true,
+      "heading": "Practical Donations",
+      "content": "If you are interested in practically supporting Graih through donations, we would really appreciate you considering doing it through any of these ways:\n\n**Meals**: Do you love cooking for others? We are always looking to expand our pool of people who make wholesome homemade meals at home and then drop them to us ready for use!\n\n**Food items**: We are always looking for cupboard staples to replenish our shelves so we can make meals within the Drop-In. To get the latest items we need or to discuss making meals for Graih - please feel free to speak to Yvette Armstrong (yvette@graih.org.im) for more information. \n\n**Other:** clothing/bedding and furniture is something that we recieve plenty of from our generous community - so for the time being we have paused taking these items!"
     },
     {
       "includeImage": false,
