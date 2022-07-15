@@ -100,7 +100,6 @@ const Contact = ({
                   </h3>
                   <form
                     name="Contact"
-                    action="/success"
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
                     method="POST"
