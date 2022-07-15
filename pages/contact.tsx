@@ -98,7 +98,7 @@ const Contact = ({
                     Send us a message
                   </h3>
                   <form
-                    name="contact"
+                    name="Contact"
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
                     method="POST"
