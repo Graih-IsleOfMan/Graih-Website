@@ -42,7 +42,10 @@ const Contact = ({
                 </h2>
                 <dl className="sm:divide-y sm:divide-teal-600 mt-5">
                   {contactDetails.map((detail: any) => (
-                    <div key={detail.name} className="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                    <div
+                      key={detail.name}
+                      className="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"
+                    >
                       <dt className="font-semibold text-teal-700">
                         {detail.name}
                       </dt>
@@ -67,9 +70,7 @@ const Contact = ({
                       dangerouslySetInnerHTML={{ __html: address }}
                     ></p>
                   </div>
-                  <p className="mt-6">
-                    {addressNote}
-                  </p>
+                  <p className="mt-6">{addressNote}</p>
                 </div>
                 <div className="flex flex-col justify-around"></div>
               </div>
@@ -79,7 +80,7 @@ const Contact = ({
                     <img
                       className="object-cover object-bottom h-full w-full relative"
                       src={map}
-                      alt="Map showing Graih&apos;s location in Douglas (54.15780131779715, -4.478278503200159)"
+                      alt="Map showing Graih's location in Douglas (54.15780131779715, -4.478278503200159)"
                     />
                   </a>
                 </div>
@@ -99,6 +100,7 @@ const Contact = ({
                   </h3>
                   <form
                     name="Contact"
+                    action="/success"
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
                     method="POST"
