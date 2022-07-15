@@ -98,6 +98,7 @@ const Contact = ({
                   <h3 className="text-3xl font-semibold text-teal-600">
                     Send us a message
                   </h3>
+                  <p className="mt-3 text-lg">If you have any queries for us, feel free to use the form below. Please do not use this form if you require urgent care.</p>
                   <form
                     name="Contact"
                     data-netlify="true"
