@@ -1,11 +1,11 @@
 backend:
   name: git-gateway
   branch: main
-#local_backend: true  
+#local_backend: true
 media_folder: public/img
 public_folder: /img
-site_url: https://sleepy-knuth-43c8bb.netlify.app/
-logo_url: https://sleepy-knuth-43c8bb.netlify.app/logo2.svg
+site_url: https://www.graih.org.im/
+logo_url: https://www.graih.org.im/logo2.svg
 locale: en
 collections:
   - name: pages
@@ -16,24 +16,49 @@ collections:
         name: home
         file: _content/home.json
         fields:
-          - { label: Primary action label, name: primaryActionLabel, widget: string }
-          - { label: Primary action link, name: primaryActionLink, widget: string }
-          - { label: Secondary action label, name: secondaryActionLabel, widget: string }
-          - { label: Secondary action link, name: secondaryActionLink, widget: string }
+          - {
+              label: Primary action label,
+              name: primaryActionLabel,
+              widget: string,
+            }
+          - {
+              label: Primary action link,
+              name: primaryActionLink,
+              widget: string,
+            }
+          - {
+              label: Secondary action label,
+              name: secondaryActionLabel,
+              widget: string,
+            }
+          - {
+              label: Secondary action link,
+              name: secondaryActionLink,
+              widget: string,
+            }
           - { label: Intro paragraph, name: introParagraph, widget: markdown }
           - label: Opening Hours
             name: openingHours
             widget: list
             fields:
               - { label: Service area, name: serviceArea, widget: string }
-              - { label: Description, name: description, widget: string, required: false }
+              - {
+                  label: Description,
+                  name: description,
+                  widget: string,
+                  required: false,
+                }
               - label: Schedules
                 name: schedules
                 widget: list
                 fields:
                   - { label: Days, name: days, widget: string }
                   - { label: Opening times, name: openingTimes, widget: string }
-          - { label: Our impact date range, name: ourImpactDates, widget: string }
+          - {
+              label: Our impact date range,
+              name: ourImpactDates,
+              widget: string,
+            }
           - label: Our impact stats
             name: ourImpactStats
             widget: list
@@ -42,17 +67,21 @@ collections:
             max: 3
             fields:
               - { label: Statistic value, name: statValue, widget: string }
-              - { label: Statistic description, name: statDescription, widget: string }
+              - {
+                  label: Statistic description,
+                  name: statDescription,
+                  widget: string,
+                }
           - label: Trustees
             name: trustees
             widget: list
-            fields: 
+            fields:
               - { label: Name, name: name, widget: string }
           - label: Uploads
             name: uploads
             widget: list
             fields:
-              - { label: File, name: file, widget: file}
+              - { label: File, name: file, widget: file }
 
       - label: Contact
         name: contact
@@ -65,7 +94,7 @@ collections:
             widget: list
             fields:
               - { label: Name, name: name, widget: string }
-              - { label: Details, name: details , widget: text }
+              - { label: Details, name: details, widget: text }
           - { label: Contact Details Note, name: detailsNote, widget: text }
           - { label: Address, name: address, widget: text }
           - { label: Address Note, name: addressNote, widget: text }
@@ -74,24 +103,54 @@ collections:
     folder: _content/pages
     format: json
     create: true
-    sortable_fields: ['sortOrder']
+    sortable_fields: ["sortOrder"]
     fields:
       - { label: Sort Order, name: sortOrder, widget: number, required: true }
       - { label: Title, name: title, widget: string }
-      - { label: Shortened menu wording, name: menuWording, widget: string, required: false}
+      - {
+          label: Shortened menu wording,
+          name: menuWording,
+          widget: string,
+          required: false,
+        }
       - label: Paragraphs
         name: paragraphs
         widget: list
         fields:
           - { label: Heading, name: heading, widget: string, required: false }
           - { label: Content, name: content, widget: markdown }
-          - { label: Include image, name: includeImage, widget: boolean, default: false }
+          - {
+              label: Include image,
+              name: includeImage,
+              widget: boolean,
+              default: false,
+            }
           - label: "Featured Image"
             name: "featuredImage"
             widget: "image"
             required: false
             choose_url: false
-          - { label: Image alt text, name: imageAlt, widget: string, required: false }
-          - { label: Image on left, name: imageLeft, widget: boolean, default: true }
-      - { label: Include in menu, name: includeMenu, widget: boolean, default: true }
-      - { label: Include in footer, name: includeFooter, widget: boolean, default: false }
+          - {
+              label: Image alt text,
+              name: imageAlt,
+              widget: string,
+              required: false,
+            }
+          - {
+              label: Image on left,
+              name: imageLeft,
+              widget: boolean,
+              default: true,
+            }
+      - {
+          label: Include in menu,
+          name: includeMenu,
+          widget: boolean,
+          default: true,
+        }
+      - {
+          label: Include in footer,
+          name: includeFooter,
+          widget: boolean,
+          default: false,
+        }
