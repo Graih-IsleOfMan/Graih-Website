@@ -11,8 +11,8 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: '/pages/job-opportunities',
-        destination: '/jobs',
+        source: '/jobs',
+        destination: '/pages/job-opportunities',
       },
     ]
   },
