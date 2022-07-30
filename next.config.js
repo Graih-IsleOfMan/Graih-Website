@@ -8,6 +8,15 @@ const nextConfig = {
     });
     return cfg;
   },
+  async redirects() {
+    return [
+      {
+        source: '/pages/job-opportunities',
+        destination: '/jobs',
+        permanent: true,
+      },
+    ]
+  },
 };
 
 module.exports = nextConfig;
