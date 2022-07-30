@@ -8,11 +8,12 @@ const nextConfig = {
     });
     return cfg;
   },
-  async rewrites() {
+  async redirects() {
     return [
       {
         source: '/jobs',
         destination: '/pages/job-opportunities',
+        permanent: true
       },
     ]
   },
