@@ -67,10 +67,16 @@
   ],
   "trustees": [
     {
+      "name": "J Bingham"
+    },
+    {
       "name": "T Bateman"
     },
     {
-      "name": "J Bingham"
+      "name": "A. Shipley"
+    },
+    {
+      "name": "D. Boultbee"
     }
   ],
   "primaryActionLabel": "Need help?"
