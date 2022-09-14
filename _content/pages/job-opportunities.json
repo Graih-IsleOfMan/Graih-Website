@@ -1,5 +1,12 @@
 {
-  "paragraphs": [],
+  "paragraphs": [
+    {
+      "includeImage": false,
+      "imageLeft": true,
+      "heading": "",
+      "content": "Currently we have no job vaccancies within our Charity."
+    }
+  ],
   "includeMenu": false,
   "includeFooter": true,
   "sortOrder": 3,
