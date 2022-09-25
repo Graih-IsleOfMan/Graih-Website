@@ -17,23 +17,7 @@
     }
   ],
   "Uploads": "/img/graih-standing-order-form.doc",
-  "uploads": [
-    {
-      "file": "/img/deputy-manager-role-profile.doc"
-    },
-    {
-      "file": "/img/graih-standing-order-form.doc"
-    },
-    {
-      "file": "/img/case-for-improving-the-health-of-the-homeless-in-the-iom.docx"
-    },
-    {
-      "file": "/img/homeless-presentation.pptx"
-    },
-    {
-      "file": "/img/pdf-bank-night-shelter-support-worker-role-profile.pdf"
-    }
-  ],
+  "uploads": [],
   "primaryActionLink": "/pages/need-help",
   "ourImpactDates": "Statistics are taken over the time period 1st January 2019 to 31st December 2021.",
   "openingHours": [
